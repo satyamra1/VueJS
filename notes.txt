@@ -1,0 +1,88 @@
+What is vueJs and what are benifits of it.  
+What is the difference between React and Vue?
+
+Installation- There are 2 ways to Use Vue.js
+1.CDN
+2.CLI
+
+There are two things in the folder- one is for html other is for JS 
+in .vue extention files their should be 3 block of codes -
+1. Template(For html)
+2. Script(for JS)
+3. Style(For CSS)
+
+Main.js - It is used to mount components with html (ex- createApp.mount('#app); )
+
+
+Interpolation and Data
+Interpolation is the way to compile javascript into the html Template. It is done by using - {{ }}
+Or using Interpolation you can use send the data from script to Template
+
+Example- 
+<template>
+    <h1>Email: {{ email }}</h1>
+    <h1>Email: {{ mobile }}</h1>
+    <h1>Email: {{ mobile=8888 }}</h1>
+
+</template>
+
+<script>
+
+export default {
+    data() {
+        return {
+            email: "satyam@gmail.com",
+            mobile: 9999 
+        }
+    }
+}
+
+</script>
+
+<style>
+h1{
+    color: red;
+}
+
+</style>
+
+
+---------------------
+
+Methods in Vue: We create functions or object inside it, which is used to send data into html template.
+
+Code example- 
+
+Events- We can create events in Vue, like -
+
+<template>
+<button  v-on:click="alertBtn()">  </button>
+<template>
+
+<script>
+export default {
+    name:"home",
+    methods:{
+        alertBtn(){
+            alert("Button clicked")
+        }
+    }
+}
+<script>
+
+types of events:
+-
+-
+-
+
+How to change some value using a events. Example a counter function
+
+Code of counter function in Vue-
+
+
+Two way Binding-
+
+Que - What is Two way Binding-
+Ans- It is use to bind model and view, this improved code complexity.
+
+what is model and view
